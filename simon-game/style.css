@@ -1,0 +1,96 @@
+.button {
+  width: 50%;
+  height: 50%;
+  float: left;
+  border: none;
+  outline: none;
+}
+.button:not(.disabled) {
+  cursor: pointer;
+}
+.button:nth-child(3) {
+  clear: left;
+}
+.button.green {
+  background: #00a74a;
+  border-bottom: 6px solid #000;
+  border-right: 6px solid #000;
+}
+.button.green.active,
+.button.green:active:not(.disabled) {
+  background: #13ff7c;
+}
+.button.red {
+  background: #9f0f17;
+  border-bottom: 6px solid #000;
+  border-left: 6px solid #000;
+}
+.button.red.active,
+.button.red:active:not(.disabled) {
+  background: #ff4c4c;
+}
+.button.blue {
+  background: #094a8f;
+  border-top: 6px solid #000;
+  border-left: 6px solid #000;
+}
+.button.blue.active,
+.button.blue:active:not(.disabled) {
+  background: #1c8cff;
+}
+.button.yellow {
+  background: #cca707;
+  border-top: 6px solid #000;
+  border-right: 6px solid #000;
+}
+.button.yellow.active,
+.button.yellow:active:not(.disabled) {
+  background: #fed93f;
+}
+.button-wrapper {
+  width: 400px;
+  height: 400px;
+  border: 12px solid #000;
+  border-radius: 50%;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: auto;
+}
+.panel-wrapper {
+  position: relative;
+  width: 400px;
+  text-align: center;
+  margin: auto;
+}
+.control {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  border: 6px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+}
+.start {
+  margin-top: 40px;
+  font-size: 25px;
+  padding: 5px 20px;
+  z-index: 30;
+  position: relative;
+}
+.game-message {
+  color: red;
+  font-size: 20px;
+  margin-top: 20px;
+  width: 80%;
+  height: 40px;
+  background: #f4f4f4;
+  margin: 20px auto;
+  border: 1px solid #333;
+  line-height: 40px;
+}
