@@ -1,0 +1,55 @@
+html,
+body,
+#app {
+  height: 100%;
+}
+.app-wrapper {
+  position: relative;
+  text-align: center;
+  height: 100%;
+}
+.app-wrapper * {
+  box-sizing: border-box;
+}
+.editor-wrapper,
+.preview-wrapper {
+  text-align: left;
+  max-width: 600px;
+  margin: auto;
+  border: 1px solid;
+  margin-top: 20px;
+  padding: 20px;
+}
+.editor-wrapper {
+  padding: 0;
+  border: 0;
+}
+.editor-wrapper textarea {
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+}
+.toolbar {
+  overflow: hidden;
+  background: #f4f4f4;
+}
+.toolbar h3 {
+  float: left;
+}
+.toolbar button {
+  float: right;
+}
+.maxmized {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  z-index: 10;
+  background: #fff;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+}
+.maxmized textarea {
+  height: 100%;
+}
